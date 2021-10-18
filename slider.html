@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        window.onload = function() {
+
+            let slides = [
+                {
+                    title: "Pic 1",
+                    background: "public/images/anders-jilden-Sc5RKXLBjGg-unsplash.jpg",
+                    link: "https://en.wikipedia.org/wiki/Architecture"
+                },
+                {
+                    title: "Pic 2",
+                    background: "public/images/marc-olivier-jodoin--HIiNFXcbtQ-unsplash.jpg",
+                    link: "https://www.dezeen.com/architecture/"
+                },
+                {
+                    title: "Pic 3",
+                    background: "public/images/danist-soh-dqXiw7nCb9Q-unsplash.jpg",
+                    link: "https://www.amazingarchitecture.com/"
+                }
+            ]
+
+            Slider.initSlider(slides);
+        };
+     </script>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="assets/img/blueprint.png" alt="logo">
+    </header>
+    <div class="container">
+        <main class="center column">
+            <article>
+                <div class="slider" id="slider"></div>
+                <div class="btn-bar">
+                    <button class="prevBtn slider-control-left"><i class="fa fa-angle-left"></i></button>
+                    <button class="showBtn"><i class="fa fa-eye" style="font-size:2rem"></i></button>
+                    <button class="hideBtn"><i class="fa fa-eye-slash" style="font-size:2rem"></i></button>
+                    <button class="slideShow">slideShow</button>
+                    <button class="nextBtn slider-control-right"><i class="fa fa-angle-right"></i></button> 
+                </div>
+            </article>
+        </main>
+        <nav class="left column">
+            <h3>Page links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>
+        </nav>
+        <div class="right column">
+            <h3>Right heading</h3>
+            <p></p>
+        </div>
+        <div class="push"></div>
+    </div>
+    <div class="footer-wrapper">
+        <footer class="footer">
+            <img class="logo" src="assets/img/blueprint.png" alt="logo">
+        </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
